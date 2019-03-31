@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 
 def get_info(name):
     base_url = 'https://www.jobindex.dk'
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome('./chromedriver.exe')
     browser.get(base_url)
     browser.implicitly_wait(3)
     
